@@ -1,4 +1,17 @@
-﻿function post_func() {
+﻿function urun_ekle(ad, fiyat, link, resim) {
+    $.ajax({
+        url: "sepet/Urun_Ekle",
+        data: { "resim": resim, "urun_adi": ad, "fiyat": fiyat, "url": link },
+        success: function (response) {
+            document.getElementById("demo").innerHTML = "Eklendi";
+        },
+        error: function (xhr) {
+            document.getElementById("demo").innerHTML = "Error";
+        }
+    });
+};
+
+function post_func() {
     var arr = [];
     var product = document.getElementById("aranan_kelime").value
     $.ajax({
@@ -21,7 +34,12 @@
                 cell1.innerHTML = "<img height='100' width='100' src=" + response[i].resim + " >";
                 cell2.innerHTML = response[i].urun;
                 cell3.innerHTML = response[i].fiyat;
-                cell4.innerHTML = "<a href=" + response[i].link + ">Git</a>";
+                var yazi = `<button onclick = "urun_ekle('${response[i].urun}','${response[i].fiyat}','${response[i].link}','${response[i].resim}')">Sepete Ekle</button>`;
+                cell4.innerHTML = yazi;
+            
+
+                //"<a href='/Sepet/urun_ekle?url=" + response[i].link + "&fiyat=" + response[i].fiyat + "&resim=" + response[i].resim + "&urun_adi=" + response[i].urun + "'>Git</a>";
+                 
             }
         },
         error: function (xhr) {
@@ -52,7 +70,8 @@ function post_func2() {
                 cell1.innerHTML = "<img height='100' width='100' src=" + response[i].resim + " >";
                 cell2.innerHTML = response[i].urun;
                 cell3.innerHTML = response[i].fiyat;
-                cell4.innerHTML = "<a href=" + response[i].link + ">Git</a>";
+                var yazi = `<button onclick = "urun_ekle('${response[i].urun}','${response[i].fiyat}','${response[i].link}','${response[i].resim}')">Sepete Ekle</button>`;
+                cell4.innerHTML = yazi;
 
             }
 
@@ -62,7 +81,6 @@ function post_func2() {
         }
     });
 }
-
 function Islogin() {
     $.ajax({
         async: "false",
