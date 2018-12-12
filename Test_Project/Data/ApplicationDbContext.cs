@@ -24,7 +24,7 @@ namespace Test_Project.Data
         }
         public DbSet<Arananlar> Arananlar { get; set; }
         public DbSet<Favoriler> Favoriler { get; set; }
-        public DbSet<Sepet> Sepet { get; set; }
+        public DbSet<Istek> Sepet { get; set; }
         public DbSet<Siparis> Siparis { get; set; }
     }
 }

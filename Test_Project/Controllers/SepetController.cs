@@ -24,7 +24,7 @@ namespace Test_Project.Controllers
         public JsonResult Urun_Ekle(string resim,string urun_adi,float fiyat,string url)
         {
             ApplicationUser user = _usermanager.FindByNameAsync(HttpContext.User.Identity.Name).Result;
-            var sepet = new Sepet();
+            var sepet = new Istek();
             sepet.user = user;
             sepet.Urun_Adi = urun_adi;
             sepet.Urun_Fiyati =fiyat;
@@ -41,7 +41,7 @@ namespace Test_Project.Controllers
             var sepet = _ctx.Sepet.Where(a => a.user.Id == user.Id).Select(s => new SepetViewModel() { Urun_Adi = s.Urun_Adi, Urun_Fiyati = s.Urun_Fiyati, Urun_Fotograf = s.Urun_Fotograf, Urun_Linki = s.Urun_Linki, Id = s.Id }).ToList();
             return Json(sepet);
         }
-        [Authorize]
+        //[Authorize]
         public IActionResult Index()
         {
             return View();
@@ -49,7 +49,7 @@ namespace Test_Project.Controllers
         [Authorize]
         public JsonResult Urun_Sil(int Id)
         {
-            var silme_sepet = new Sepet { Id = Id };
+            var silme_sepet = new Istek { Id = Id };
             _ctx.Sepet.Attach(silme_sepet);
             _ctx.Sepet.Remove(silme_sepet);
             _ctx.SaveChanges();

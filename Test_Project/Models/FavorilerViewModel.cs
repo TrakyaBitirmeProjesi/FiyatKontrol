@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Test_Project.Models
 {
-    public class Istek
+    public class FavorilerViewModel
     {
         public int Id { get; set; }
         public ApplicationUser user { get; set; }
