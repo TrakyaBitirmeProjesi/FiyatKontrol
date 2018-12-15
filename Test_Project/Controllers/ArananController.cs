@@ -35,6 +35,7 @@ namespace Test_Project.Controllers
         [Authorize]
         public JsonResult Urun_Sil(int Id)
         {
+            var aranmayan = "1";
             var silme_Aranan = new Arananlar { Id = Id };  
             _ctx.Arananlar.Attach(silme_Aranan);
             //_ctx.Arananlar.Remove(silme_Aranan);  //ÜRÜN VERİ TABANINDAN SİLİNMEYECEK

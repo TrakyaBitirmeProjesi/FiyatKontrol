@@ -22,3 +22,15 @@ C:\Users\MSI\Desktop\Test_Project\Test_Project\obj\Debug\netcoreapp2.0\Test_Proj
 C:\Users\MSI\Desktop\Test_Project\Test_Project\obj\Debug\netcoreapp2.0\Test_Project.AssemblyInfo.cs
 C:\Users\MSI\Desktop\Test_Project\Test_Project\obj\Debug\netcoreapp2.0\Test_Project.dll
 C:\Users\MSI\Desktop\Test_Project\Test_Project\obj\Debug\netcoreapp2.0\Test_Project.pdb
+C:\Users\Yusuf\Source\Repos\FiyatKontrol\Test_Project\bin\Debug\netcoreapp2.0\Test_Project.deps.json
+C:\Users\Yusuf\Source\Repos\FiyatKontrol\Test_Project\bin\Debug\netcoreapp2.0\Test_Project.runtimeconfig.json
+C:\Users\Yusuf\Source\Repos\FiyatKontrol\Test_Project\bin\Debug\netcoreapp2.0\Test_Project.runtimeconfig.dev.json
+C:\Users\Yusuf\Source\Repos\FiyatKontrol\Test_Project\bin\Debug\netcoreapp2.0\Test_Project.dll
+C:\Users\Yusuf\Source\Repos\FiyatKontrol\Test_Project\bin\Debug\netcoreapp2.0\Test_Project.pdb
+C:\Users\Yusuf\Source\Repos\FiyatKontrol\Test_Project\obj\Debug\netcoreapp2.0\Test_Project.csprojAssemblyReference.cache
+C:\Users\Yusuf\Source\Repos\FiyatKontrol\Test_Project\obj\Debug\netcoreapp2.0\Test_Project.csproj.CoreCompileInputs.cache
+C:\Users\Yusuf\Source\Repos\FiyatKontrol\Test_Project\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Yusuf\Source\Repos\FiyatKontrol\Test_Project\obj\Debug\netcoreapp2.0\Test_Project.AssemblyInfoInputs.cache
+C:\Users\Yusuf\Source\Repos\FiyatKontrol\Test_Project\obj\Debug\netcoreapp2.0\Test_Project.AssemblyInfo.cs
+C:\Users\Yusuf\Source\Repos\FiyatKontrol\Test_Project\obj\Debug\netcoreapp2.0\Test_Project.dll
+C:\Users\Yusuf\Source\Repos\FiyatKontrol\Test_Project\obj\Debug\netcoreapp2.0\Test_Project.pdb
